@@ -4,16 +4,24 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Hotel-Rahmath – Family Restaurant</title>
-<link rel="icon" type="image/x-icon" href="logo_un_removed-removebg-preview.png">
+<link rel="icon" type="image/x-icon" href="hero-bg.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="rahmath.css">
+
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#C9A84C" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Hotel Rahmath" />
+<link rel="apple-touch-icon" href="hero-bg.webp" />
 </head>
 <body>
 
 <div id="loader">
-  <div class="loader-logo"><img src="logo_un_removed-removebg-preview.png"></div>
+  <div class="loader-logo"><img src="hero-bg.webp"></div>
   <div class="loader-bar"></div>
 </div>
 
@@ -29,6 +37,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-reserve">Reserve</a>
+  <button class="nav-install" id="installBtn" style="display:none" onclick="installPWA()">⬇ Install App</button>
   <button class="hamburger" id="ham" aria-label="Menu" onclick="toggleMobile()">
     <span></span><span></span><span></span>
   </button>
@@ -263,7 +272,7 @@
         <div class="contact-text"><strong>Email</strong>reservations@hotelrahmath.com</div>
       </div>
       <div class="map-box" onclick="window.open('https://maps.app.goo.gl/9E7hFehUq6YH3mgD7', '_blank')">
-        <img class="main-photo" src="some_menus_need_202604241122.jpeg" loading="lazy" alt="Hotel menu preview">
+        <img class="main-photo" src="some_menus_need_202604241122.avif" loading="lazy" alt="Hotel menu preview">
         <p>Open in Google Maps</p>
       </div>
     </div>
@@ -318,7 +327,7 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" ></script>
 <script>
   emailjs.init("0Q_5ya6Jw6StQ2m2D"); // Replace with your EmailJS public key: 0Q_5ya6Jw6StQ2m2D
 
@@ -342,6 +351,6 @@
     });
   }
 </script>
-<script src="rahmath.js" defer></script>
+<script src="rahmath.js" ></script>
 </body>
 </html>

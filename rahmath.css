@@ -189,6 +189,8 @@ footer{background:#100801;padding:4rem 2rem 2rem;border-top:1px solid rgba(201,1
 .social-btn:hover{background:var(--gold);color:#1A0F02;border-color:var(--gold)}
 .footer-bottom{border-top:1px solid rgba(201,168,76,.1);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
 .footer-bottom p{font-size:.72rem;color:rgba(196,168,130,.45);letter-spacing:.05em}
+.nav-install{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:.5rem 1.4rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:all .3s;margin-left:.8rem}
+.nav-install:hover{background:var(--gold);color:#1A0F02}
 
 /* RESPONSIVE */
 @media(max-width:900px){
